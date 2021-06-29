@@ -1,0 +1,28 @@
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+  <!-- <div class="card highlight-card card-small">
+
+    <span>{{ title }} app is running!</span>
+
+
+  </div> -->
+  <div class="row">
+
+    <div class="col-lg-12" *ngFor="let key of keyword1">
+      <button style="margin-bottom: 10px;" *ngIf="key.key">{{key.key}}<span
+          (click)="popkeyword(key.key)" style="color: red;">&#10060;</span></button>
+    </div>
+    <br>
+    <div class="col-lg-12">
+      <textarea placeholder="enter Text" [(ngModel)]="keyword" (keyup.enter)="addToKeywords()" (keyup.,)="addToKeywords()" rows="4" cols="100">
+    </textarea>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<router-outlet></router-outlet>
